@@ -1,0 +1,70 @@
+[27-May-2014 04:26:39] PHP Fatal error:  Call to undefined method Shop_model::deleteByPersonInchargeId() in /home7/crossov9/public_html/temonav2/application/modules/dashboard/controllers/dashboard.php on line 329
+[27-May-2014 04:32:05] PHP Fatal error:  Call to undefined method Shop_model::deleteByPersonInchargeId() in /home7/crossov9/public_html/temonav2/application/modules/dashboard/controllers/dashboard.php on line 335
+[27-May-2014 22:32:25] PHP Fatal error:  Class 'MY_Controller' not found in /home7/crossov9/public_html/temonav3/application/modules/user/controllers/admin.php on line 6
+[28-May-2014 00:49:56] PHP Parse error:  syntax error, unexpected $end, expecting ')' in /home7/crossov9/public_html/temonav3/application/modules/dashboard/controllers/dashboard.php on line 199
+[28-May-2014 04:31:48] PHP Parse error:  syntax error, unexpected $end, expecting ')' in /home7/crossov9/public_html/temonav3/application/modules/dashboard/controllers/dashboard.php on line 370
+[28-May-2014 23:42:40] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home7/crossov9/public_html/temonav3/application/modules/dashboard/views/shoplist/list.php on line 130
+[28-May-2014 23:42:52] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home7/crossov9/public_html/temonav3/application/modules/dashboard/views/shoplist/list.php on line 130
+[28-May-2014 23:44:10] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home7/crossov9/public_html/temonav3/application/modules/dashboard/views/shoplist/list.php on line 130
+[28-May-2014 23:44:19] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home7/crossov9/public_html/temonav3/application/modules/dashboard/views/shoplist/list.php on line 99
+[28-May-2014 23:44:58] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home7/crossov9/public_html/temonav3/application/modules/dashboard/views/shoplist/list.php on line 99
+[28-May-2014 23:45:04] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home7/crossov9/public_html/temonav3/application/modules/dashboard/views/shoplist/list.php on line 93
+[28-May-2014 23:48:10] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home7/crossov9/public_html/temonav3/application/modules/dashboard/views/shoplist/list.php on line 99
+[28-May-2014 23:50:40] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home7/crossov9/public_html/temonav3/application/modules/dashboard/views/shoplist/list.php on line 99
+[28-May-2014 23:51:45] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home7/crossov9/public_html/temonav3/application/modules/dashboard/views/shoplist/list.php on line 99
+[28-May-2014 23:51:50] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home7/crossov9/public_html/temonav3/application/modules/dashboard/views/shoplist/list.php on line 99
+[28-May-2014 23:51:54] PHP Fatal error:  Call to a member function monthDetailById() on a non-object in /home7/crossov9/public_html/temonav3/application/modules/dashboard/controllers/dashboard.php on line 61
+[28-May-2014 23:56:09] PHP Parse error:  syntax error, unexpected T_PUBLIC in /home7/crossov9/public_html/temonav3/application/modules/dashboard/controllers/dashboard.php on line 532
+[28-May-2014 23:56:29] PHP Parse error:  syntax error, unexpected T_PUBLIC in /home7/crossov9/public_html/temonav3/application/modules/dashboard/controllers/dashboard.php on line 532
+[29-May-2014 23:04:51] PHP Fatal error:  Class 'Login_model' not found in /home7/crossov9/public_html/temonav3/application/third_party/MX/Loader.php on line 209
+[30-May-2014 01:31:35] PHP Parse error:  syntax error, unexpected $end in /home7/crossov9/public_html/temonav3/application/modules/import/models/import_model.php on line 112
+[30-May-2014 03:19:57] PHP Fatal error:  Call to undefined method Shop_model::invoiceByRange() in /home7/crossov9/public_html/temonav3/application/modules/dashboard/controllers/dashboard.php on line 560
+[30-May-2014 03:30:20] PHP Fatal error:  Call to undefined method Shop_model::invoiceByRange() in /home7/crossov9/public_html/temonav3/application/modules/dashboard/controllers/dashboard.php on line 514
+[30-May-2014 03:33:38] PHP Fatal error:  Call to undefined method Shop_model::invoiceByRange() in /home7/crossov9/public_html/temonav3/application/modules/dashboard/controllers/dashboard.php on line 514
+[30-May-2014 03:34:42] PHP Fatal error:  Call to undefined method Shop_model::invoiceByRange() in /home7/crossov9/public_html/temonav3/application/modules/dashboard/controllers/dashboard.php on line 514
+[30-May-2014 03:34:51] PHP Fatal error:  Call to undefined method Shop_model::invoiceByRange() in /home7/crossov9/public_html/temonav3/application/modules/dashboard/controllers/dashboard.php on line 514
+[30-May-2014 03:37:29] PHP Fatal error:  Call to undefined method Shop_model::invoiceByRange() in /home7/crossov9/public_html/temonav3/application/modules/dashboard/controllers/dashboard.php on line 513
+[30-May-2014 05:08:03] PHP Parse error:  syntax error, unexpected $end in /home7/crossov9/public_html/temonav3/application/modules/dashboard/controllers/dashboard.php on line 989
+[30-May-2014 05:11:13] PHP Parse error:  syntax error, unexpected $end in /home7/crossov9/public_html/temonav3/application/modules/dashboard/controllers/dashboard.php on line 633
+[01-Jun-2014 23:41:10] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home7/crossov9/public_html/temonav3/application/modules/dashboard/controllers/dashboard.php on line 525
+[03-Jun-2014 01:36:59] PHP Parse error:  syntax error, unexpected $end in /home7/crossov9/public_html/temonav3/application/modules/dashboard/controllers/dashboard.php on line 81
+[03-Jun-2014 01:57:09] PHP Parse error:  syntax error, unexpected $end in /home7/crossov9/public_html/temonav3/application/modules/dashboard/controllers/dashboard.php on line 454
+[03-Jun-2014 01:57:20] PHP Fatal error:  Call to undefined function  str_getcsv() in /home7/crossov9/public_html/temonav3/application/modules/dashboard/controllers/dashboard.php on line 393
+[03-Jun-2014 01:59:44] PHP Fatal error:  Call to undefined function  str_getcsv() in /home7/crossov9/public_html/temonav3/application/modules/dashboard/controllers/dashboard.php on line 394
+[03-Jun-2014 02:02:55] PHP Parse error:  syntax error, unexpected $end, expecting ')' in /home7/crossov9/public_html/temonav3/application/modules/dashboard/controllers/dashboard.php on line 455
+[03-Jun-2014 02:03:21] PHP Fatal error:  Call to undefined function  str_getcsv() in /home7/crossov9/public_html/temonav3/application/modules/dashboard/controllers/dashboard.php on line 394
+[03-Jun-2014 02:05:54] PHP Parse error:  syntax error, unexpected $end in /home7/crossov9/public_html/temonav3/application/modules/dashboard/controllers/dashboard.php on line 984
+[03-Jun-2014 02:45:47] PHP Parse error:  syntax error, unexpected $end, expecting ')' in /home7/crossov9/public_html/temonav3/application/modules/dashboard/controllers/dashboard.php on line 200
+[03-Jun-2014 02:48:30] PHP Parse error:  syntax error, unexpected $end in /home7/crossov9/public_html/temonav3/application/modules/dashboard/controllers/dashboard.php on line 452
+[04-Jun-2014 03:38:21] PHP Parse error:  syntax error, unexpected $end, expecting T_VARIABLE or '$' in /home7/crossov9/public_html/temonav3/application/modules/dashboard/controllers/dashboard.php on line 269
+[04-Jun-2014 03:41:51] PHP Fatal error:  Class 'Shop_model' not found in /home7/crossov9/public_html/temonav3/application/third_party/MX/Loader.php on line 209
+[04-Jun-2014 03:59:17] PHP Parse error:  syntax error, unexpected $end in /home7/crossov9/public_html/temonav3/application/modules/dashboard/controllers/dashboard.php on line 337
+[04-Jun-2014 04:03:03] PHP Warning:  Unexpected character in input:  ''' (ASCII=39) state=1 in /home7/crossov9/public_html/temonav3/application/modules/dashboard/controllers/dashboard.php on line 432
+[04-Jun-2014 04:03:03] PHP Parse error:  syntax error, unexpected $end, expecting ')' in /home7/crossov9/public_html/temonav3/application/modules/dashboard/controllers/dashboard.php on line 432
+[05-Jun-2014 05:35:29] PHP Fatal error:  Call to undefined method Shop_model::commentDetail() in /home7/crossov9/public_html/temonav3/application/modules/dashboard/views/listingAction.php on line 128
+[05-Jun-2014 05:50:47] PHP Fatal error:  Call to undefined method Shop_model::commentDetail() in /home7/crossov9/public_html/temonav3/application/modules/dashboard/views/listingAction.php on line 128
+[05-Jun-2014 05:51:12] PHP Fatal error:  Call to undefined method Shop_model::commentDetail() in /home7/crossov9/public_html/temonav3/application/modules/dashboard/views/listingAction.php on line 128
+[05-Jun-2014 05:51:22] PHP Fatal error:  Call to undefined method Shop_model::commentDetail() in /home7/crossov9/public_html/temonav3/application/modules/dashboard/views/listingAction.php on line 128
+[05-Jun-2014 06:06:45] PHP Fatal error:  Call to undefined method Shop_model::commentDetail() in /home7/crossov9/public_html/temonav3/application/modules/dashboard/views/listingAction.php on line 128
+[05-Jun-2014 06:07:41] PHP Fatal error:  Call to undefined method Shop_model::commentDetail() in /home7/crossov9/public_html/temonav3/application/modules/dashboard/views/listingAction.php on line 128
+[05-Jun-2014 21:36:16] PHP Fatal error:  Call to undefined method Shop_model::commentDetail() in /home7/crossov9/public_html/temonav3/application/modules/dashboard/views/listingAction.php on line 128
+[05-Jun-2014 22:20:22] PHP Fatal error:  Call to undefined method Shop_model::commentDetail() in /home7/crossov9/public_html/temonav3/application/modules/dashboard/views/listingAction.php on line 128
+[05-Jun-2014 22:25:11] PHP Fatal error:  Call to undefined method Shop_model::commentDetail() in /home7/crossov9/public_html/temonav3/application/modules/dashboard/views/listingAction.php on line 128
+[05-Jun-2014 22:27:12] PHP Fatal error:  Call to undefined method Shop_model::commentDetail() in /home7/crossov9/public_html/temonav3/application/modules/dashboard/views/listingAction.php on line 128
+[05-Jun-2014 22:32:52] PHP Fatal error:  Call to undefined method Shop_model::commentDetail() in /home7/crossov9/public_html/temonav3/application/modules/dashboard/views/listingAction.php on line 128
+[05-Jun-2014 22:37:55] PHP Fatal error:  Call to undefined method Shop_model::commentDetail() in /home7/crossov9/public_html/temonav3/application/modules/dashboard/views/listingAction.php on line 128
+[05-Jun-2014 22:39:56] PHP Fatal error:  Call to undefined method Shop_model::commentDetail() in /home7/crossov9/public_html/temonav3/application/modules/dashboard/views/listingAction.php on line 128
+[05-Jun-2014 22:40:14] PHP Fatal error:  Call to undefined method Shop_model::commentDetail() in /home7/crossov9/public_html/temonav3/application/modules/dashboard/views/listingAction.php on line 128
+[05-Jun-2014 22:40:25] PHP Fatal error:  Call to undefined method Shop_model::commentDetail() in /home7/crossov9/public_html/temonav3/application/modules/dashboard/views/listingAction.php on line 128
+[05-Jun-2014 22:40:32] PHP Fatal error:  Call to undefined method Shop_model::commentDetail() in /home7/crossov9/public_html/temonav3/application/modules/dashboard/views/listingAction.php on line 128
+[05-Jun-2014 22:43:18] PHP Fatal error:  Call to undefined method Shop_model::commentDetail() in /home7/crossov9/public_html/temonav3/application/modules/dashboard/views/listingAction.php on line 128
+[10-Jun-2014 00:45:04] PHP Fatal error:  Call to undefined method Invoice_model::overall_month() in /home7/crossov9/public_html/temonav3/application/modules/invoice/controllers/invoice.php on line 630
+[10-Jun-2014 00:45:07] PHP Fatal error:  Call to undefined method Invoice_model::overall_month() in /home7/crossov9/public_html/temonav3/application/modules/invoice/controllers/invoice.php on line 630
+[10-Jun-2014 00:45:07] PHP Fatal error:  Call to undefined method Invoice_model::overall_month() in /home7/crossov9/public_html/temonav3/application/modules/invoice/controllers/invoice.php on line 630
+[10-Jun-2014 00:52:32] PHP Parse error:  syntax error, unexpected $end in /home7/crossov9/public_html/temonav3/application/modules/invoice/models/invoice_model.php on line 159
+[10-Jun-2014 03:02:22] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home7/crossov9/public_html/temonav3/application/modules/invoice/views/accrualtimemodal.php on line 24
+[10-Jun-2014 03:08:37] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home7/crossov9/public_html/temonav3/application/modules/invoice/views/accrualtimemodal.php on line 24
+[10-Jun-2014 03:08:50] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home7/crossov9/public_html/temonav3/application/modules/invoice/views/accrualtimemodal.php on line 24
+[10-Jun-2014 03:09:43] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home7/crossov9/public_html/temonav3/application/modules/invoice/views/accrualtimemodal.php on line 24
+[10-Jun-2014 03:09:53] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home7/crossov9/public_html/temonav3/application/modules/invoice/views/accrualtimemodal.php on line 24
+[10-Jun-2014 03:14:32] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home7/crossov9/public_html/temonav3/application/modules/invoice/views/accrualtimemodal.php on line 24

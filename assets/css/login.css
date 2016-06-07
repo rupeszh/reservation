@@ -1,0 +1,57 @@
+/* CSS Document */
+body
+{
+    margin:0px;
+    padding:0px;
+}
+
+#loginform
+{
+    max-width: 365px;
+    min-height:240px;
+    padding: 19px 29px 10px;
+    margin: 0 auto 20px;
+    margin-top:40px;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=14, Direction=315, Color=#e8e5e5)";/*IE 8*/
+    -moz-box-shadow: inset -1px -1px 14px #e8e5e5;/*FF 3.5+*/
+    -webkit-box-shadow: inset -1px -1px 14px #e8e5e5;/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+    box-shadow: inset -1px -1px 14px #e8e5e5;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=14, Direction=315, Color=#e8e5e5); /*IE 5.5-7*/
+
+}
+
+.formLogin
+{
+    width:326px; margin:0 auto;
+}
+
+label.error
+{
+    color:#F00;	
+}
+
+.error
+{
+    margin: 0 auto;
+    color:#F00; 
+    margin-bottom:10px
+}
+
+.submit{ float:left;
+         margin-left:0;
+}
+
+.logo { margin-bottom:25px !important; width:250px; color: #225b86; text-shadow: 1px 1px 0 #fff; font-size: 18px;}
+
+.row { position:relative;}
+
+.row img { position:absolute; z-index:999; top:10px; left:10px;}
+
+.row input { position:relative; padding-left:38px;}
+
+#loginBtn { padding-left:18px; float: right}
