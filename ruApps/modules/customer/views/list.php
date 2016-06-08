@@ -213,7 +213,7 @@
                         <?php
                         if ($customers) {
                             $sn = 1;
-                            foreach ($customers as $customer) {
+                            foreach ($customers as $customer) { //print_r($customer);
                                 ?>
                                 <tr class="odd gradeX">
                                     <td><?php echo $sn; ?></td>
