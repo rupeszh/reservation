@@ -1,3 +1,12 @@
+<?php 
+require 'assets/carbon/Carbon.php';
+
+use Carbon\Carbon;
+$todaysDateInGregorian = Carbon::now();
+$currentDateInNepal = $todaysDateInGregorian->addYears(56)->addMonths(8)->addDays(15);
+;
+echo $currentDateInNepal;
+die;?> 
 <div class="row">
     <div class="col-lg-12">
         <h3 class="page-header">Payment Information </h3>
@@ -232,7 +241,7 @@
 
             ?>
             <nav>
-                <ul class="pagination">
+<!--                <ul class="pagination">
                   <li>
                     <a href="#" aria-label="Previous">
                       <span aria-hidden="true">&laquo;</span>
@@ -248,7 +257,7 @@
                       <span aria-hidden="true">&raquo;</span>
                     </a>
                   </li>
-                </ul>
+                </ul>-->
               </nav>
 
             <!-- /.table-responsive -->
