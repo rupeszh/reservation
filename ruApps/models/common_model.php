@@ -220,40 +220,6 @@ class Common_model extends CI_Model {
         return $query->result();
     }
 
-    function searchShopMerchant($company = '', $column = 'company') {
-        $this->db->select('tbl_shop.id,tbl_shop.company,tbl_shop.email,tbl_shop.address,tbl_shop.family_name,tbl_shop.first_name,tbl_merchant.name');
-        $this->db->from('tbl_shop');
-        $this->db->join('tbl_merchant', 'tbl_merchant.id = tbl_shop.merchant_id');
-        $this->db->like($column, $company);
-
-        return $this->db->get();
-    }
-
-    function searchShop($company = '', $column = 'company', $shop_id) {
-        $this->db->select('id,company,email,address,family_name,first_name');
-        $this->db->from('tbl_shop');
-        $this->db->where('id <> ', $shop_id);
-        $this->db->like($column, $company);
-
-        return $this->db->get();
-    }
-
-    function searchShopPersonIncharge($company = '', $column = 'company', $shop_id, $action_id = '') {
-        $this->db->_protect_identifiers = false;
-
-        $this->db->select('t2.id,t1.company,concat( t2.last_name,\' \',t2.first_name ) as `personincharge`,t2.first_name,t2.last_name');
-        $this->db->from('tbl_shop as t1');
-        $this->db->join('tbl_person_incharge as t2', 't2.shop_id = t1.id');
-        $this->db->where('t1.id <> ', $shop_id);
-        if (!empty($action_id)) {
-            $this->db->where_not_in('t2.id', $action_id);
-        }
-        $this->db->like($column, $company);
-
-        return $this->db->get();
-        //debug($this->db->last_query());
-    }
-
     function getParentMenu() {
 
         return $this->db->get_where('tbl_menu', array('parent_id' => 0));
@@ -277,14 +243,7 @@ class Common_model extends CI_Model {
     public function getActionName($action_id) {
         return $this->db->get_where('tbl_action_list', array('id' => $action_id))->row()->name;
     }
-
-    public function getMenuPermission($menu_id) {
-        $role_id = $this->session->userdata('user_roleid');
-
-        $this->db->select('count(action_id) as count');
-
-        return $this->db->get_where('tbl_role_permission', array('role_id' => $role_id, 'menu_id' => $menu_id, 'action_id' => 19));
-    }
+    
 
     public function sessionOut() {
         $user_id = @$this->session->userdata('user_id');

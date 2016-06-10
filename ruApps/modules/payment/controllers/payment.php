@@ -26,7 +26,7 @@ class Payment extends MY_Controller {
         );
         //get all the payment info 
         $data['[payments'] = $this->payment_model->getPayments();
-        //debug($data['[payments']);die;
+        
         //get all the customer information 
         $data['customers'] = $this->customer_model->getCustomers();
         //get all the months
@@ -79,14 +79,14 @@ class Payment extends MY_Controller {
                 //print_R($config);
                 $this->load->library('upload', $config);
                 $imgName = $_FILES['image']['name'];
-               // print_R($imgName);
+                // print_R($imgName);
                 if (!empty($imgName)) {
                     if (!$this->upload->do_upload('image')) {
                         $this->session->set_flashdata('error', "Smthing went wrong in uploading image.Try Again");
                         redirect('customer/index');
-                    } 
+                    }
                 }
-                
+
                 //set all the post data of the customer info table in the array
                 $form = array(
                     'name' => $name,
@@ -101,18 +101,18 @@ class Payment extends MY_Controller {
                     'created_by' => $user_id,
                     'status' => 1
                 );
-                
+
                 //check where the post data is for adding or updating 
                 if (empty($hidden_id)) {
-                    
+
                     //Insert customer ifno
                     $this->db->insert('ru_customer_info', $form);
                     $last_insert_id = $this->db->insert_id();
-                     //Update image if available 
+                    //Update image if available 
                     if ($imgName) {
                         $this->db->update('ru_customer_info', array('image' => $imgName), array('customer_id' => $last_insert_id));
                     }
-                   
+
                     //Delete customer rent charges info so that it will reduce the duplication of the charge
                     $this->db->delete('ru_customer_rent_charges', array('customer_id' => $last_insert_id));
 
@@ -129,7 +129,7 @@ class Payment extends MY_Controller {
                     $this->db->insert('ru_customer_rent_charges', $rent_form);
                     //set session flashdata for displaying the sucess message
                     $this->session->set_flashdata("success", "Customer has been Inserted Sucessfully");
-                } else { 
+                } else {
                     /**
                      * update customer info
                      */
@@ -146,7 +146,7 @@ class Payment extends MY_Controller {
                         'cable_rent_charge' => $cable_rent_charge
                     );
                     $this->db->update('ru_customer_rent_charges', $rent_form, array('customer_id' => $hidden_id));
-                    
+
                     $this->session->set_flashdata("success", "Customer information has been Updated Sucessfully");
                 }
             }
@@ -168,22 +168,21 @@ class Payment extends MY_Controller {
         //redirect to the customer
         redirect('customer/index');
     }
-    
-    public function getCustomerByAjax(){
+
+    public function getCustomerByAjax() {
         $customer_id = $this->input->post('customer_id');
         $customers = $this->customer_model->getCustomer($customer_id);
-        
+
         echo json_encode($customers);
     }
-    
-    public function getReservedRoomByFloorIdAjax(){
+
+    public function getReservedRoomByFloorIdAjax() {
         $floor_id = $this->input->post('floor_id');
         $reserved_room = array();
         //get all the empty room id
         $room_info = $this->room_model->getRoom();
         $reserved_room = $this->customer_model->getReservedRoomByFloorId($floor_id);
-        echo json_encode($reserved_room); 
-        
+        echo json_encode($reserved_room);
     }
 
 }

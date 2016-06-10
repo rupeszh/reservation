@@ -3,10 +3,11 @@ require 'assets/carbon/Carbon.php';
 
 use Carbon\Carbon;
 $todaysDateInGregorian = Carbon::now();
+//print_R($todaysDateInGregorian);die;
 $currentDateInNepal = $todaysDateInGregorian->addYears(56)->addMonths(8)->addDays(15);
-;
-echo $currentDateInNepal;
-die;?> 
+$date = DateTime::createFromFormat("Y-m-d H:i:s", $currentDateInNepal);
+$currentNepaliDAte =  $date->format("Y");
+?> 
 <div class="row">
     <div class="col-lg-12">
         <h3 class="page-header">Payment Information </h3>
@@ -241,23 +242,22 @@ die;?>
 
             ?>
             <nav>
-<!--                <ul class="pagination">
+                <ul class="pagination">
                   <li>
                     <a href="#" aria-label="Previous">
                       <span aria-hidden="true">&laquo;</span>
                     </a>
                   </li>
-                  <li><a href="#">1</a></li>
-                  <li><a href="#">2</a></li>
-                  <li><a href="#">3</a></li>
-                  <li><a href="#">4</a></li>
-                  <li><a href="#">5</a></li>
+                  <?php for($i = 2070;$i<= $currentNepaliDAte+1;$i++) {  ?> 
+                       <li <?php if($i == $currentNepaliDAte) { ?>class="active" <?php }?>><a href="#"><?php echo $i;?></a></li>
+                  <?php } ?>
+                 
                   <li>
                     <a href="#" aria-label="Next">
                       <span aria-hidden="true">&raquo;</span>
                     </a>
                   </li>
-                </ul>-->
+                </ul>
               </nav>
 
             <!-- /.table-responsive -->
@@ -271,7 +271,7 @@ die;?>
                             <th>Room No</th>
 
                             <?php foreach ($months as $month) { ?>
-                            <th class="nepaliMonth" ><?php $month_name =  $month->name;  echo $month_name; ?></th>
+                            <th class="nepaliMonth" ><?php $month_name =  $month->name; echo substr($month_name, 0, 5);  ?></th>
                             <?php } ?>
 
                         </tr>
@@ -280,7 +280,7 @@ die;?>
                         <?php
                         if ($customers) {
                             $sn = 1;
-                            foreach ($customers as $customer) {// print_R($customer);
+                            foreach ($customers as $customer) { //print_R($customer);
                                 ?>
                                 <tr class="odd gradeX">
                                     <td><?php echo $sn; ?></td>
@@ -289,13 +289,14 @@ die;?>
                                     <td><?php echo $customer->room_id; ?></td>
                                     <?php
                                     //echo date('Y');
+                                    // [room_rent_charge] => 3200 [water_rent_charge] => 0 [electricity_rent_charge] => 0 [cable_rent_charge] => 0 
                                     //echo $customer->date_of_contract;
                                     //GET THE MONTH OF THE CONTRACT
                                     //GET MONTH NAME FROM THE MONTH TABLE
                                     //DISPLAY THE PAYMENT AMOUNT OF EACH MONTH
                                     ?>
                                     <?php foreach ($months as $month) { ?>
-                                        <td><?php echo $month->month_id; ?></td>
+                                    <td><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></td>
                                     <?php } ?>
                                 </tr>
                                 <?php

@@ -14,9 +14,11 @@ class Payment_model extends CI_Model {
         $this->db->join('ru_room', 'ru_room.room_id = ru_customer_info.room_id', 'left');
         $this->db->join('ru_floor', 'ru_floor.floor_id = ru_customer_info.floor_id', 'left');
         $result = $this->db->get();
-        
-        return $result->result();
-    }
+        if($result->num_rows() > 0)         
+            return $result->result();
+        else         
+            return false;
+}
     
 
     function getPaymentById($payment_id = null) {
