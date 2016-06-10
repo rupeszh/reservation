@@ -296,7 +296,7 @@ $currentNepaliDAte =  $date->format("Y");
                                     //DISPLAY THE PAYMENT AMOUNT OF EACH MONTH
                                     ?>
                                     <?php foreach ($months as $month) { ?>
-                                    <td><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></td>
+                                    <td><?php echo $customer->room_rent_charge + $customer->water_rent_charge + $customer->electricity_rent_charge + $customer->cable_rent_charge;?> </td>
                                     <?php } ?>
                                 </tr>
                                 <?php
